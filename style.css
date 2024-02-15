@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Caplico/images/nigel-tadyanehondo-zddSvaoEdBA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    position: relative;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #027308;
+    position: relative;
+}
+.form-box h1::after{
+content: '';
+width: 30px;
+height: 4px;
+border-radius: 2px;
+background: #027308;
+position: absolute;
+bottom: -12px;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.input-field{
+    background-color: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s; 
+    overflow :hidden ;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #027308;
+}
+.btn-Field{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.btn-Field button{
+    flex-basis: 48%;
+    background: #027308;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+}
+.btn-Field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
