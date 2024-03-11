@@ -6,12 +6,19 @@
 }
 .container{
     width: 100%;
-    height: 100vh;
-    background-image: url(https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923_1280.jpg);
+    height:100vh;
+    background-image:url(https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923_1280.jpg);
     background-position: center;
     background-size: cover;
-    opacity: 0.9;
     position: relative;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.54;
 }
 .form-box{
     width: 90%;
@@ -27,29 +34,29 @@
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
-    color: #027308;
+    color:rgb(0, 122, 0);
     position: relative;
 }
 .form-box h1::after{
-content: '';
-width: 30px;
-height: 4px;
-border-radius: 2px;
-background: #027308;
-position: absolute;
-bottom: -12px;
-left: 50%;
-transform: translate(-50%,-50%);
+    content: "";
+    width:30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(6, 112, 6);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .input-field{
-    background-color: #eaeaea;
+    background-color:beige;
     margin: 15px 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
     max-height: 65px;
-    transition: max-height 0.5s; 
-    overflow :hidden ;
+    transition: max-height 0.5s;
+    overflow: hidden;
 }
 input{
     width: 100%;
@@ -64,10 +71,9 @@ form p{
 }
 form p a{
     text-decoration: none;
-    color: #027308;
+    color: crimson;
 }
 .btn-Field{
-    
     display: flex;
     justify-content: space-between;
 }
@@ -76,18 +82,16 @@ form p a{
     background: #027308;
     color: #fff;
     height: 40px;
-    border-radius: 20px;
+    border-radius:20px;
     border: 0;
-    outline:0;
+    outline: 0;
     cursor: pointer;
     transition: background 1s;
 }
 .input-group{
     height: 280px;
 }
-.btn-Field button.disable{
-    background: #eaeaea;
+.btn-field button.disable{
+    background:#eaeaea;
     color: #555;
 }
-
-
