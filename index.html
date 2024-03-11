@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>SignUp-Form</title>
 </head>
-
 <body>
     <div class="container">
-     <div class="form-box">
-       <h1 id="title">Sign Up</h1>
-        <form>
-            <div class="input-group">
-                <div class="input-field" id = "nameField">
-                    <input type="text" placeholder="Name">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field" id="emailField">
+                        <input type="email" placeholder="@gmail.com">
+                    </div>
+
+                    <div class="input-field" id="passwordField">
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <p>Forget Password <a href="#">Click Here</a></p>
                 </div>
 
-                <div class="input-field">
-                    <input type="email" placeholder="Email">
+                <div class="btn-Field">
+                    <button type="button" id="signUpbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signInbtn">Sign In</button>
                 </div>
-                <div class="input-field">
-                    <input type="password" placeholder="password">
-                </div>
-                <p>Forget password <a href="#">Click Here!</a></p>
-            </div>
-            <div class="btn-Field">
-                <button type="button" id="signUPbtn">Sign Up</button>
-                <button type="button" class="disable" id="signInbtn">Sign in</button>
-            </div>
-        </form>
-      </div>
+            </form>
+        </div>
     </div>
 </body>
-
 </html>
